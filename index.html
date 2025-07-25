@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prajwal Bawanthare - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-snap-type: y mandatory;
+      }
+
+      section,
+      .snap-section {
+        scroll-snap-align: start;
+        height: 100vh;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fade-in-up {
+        animation: fadeInUp 0.7s ease forwards;
+      }
+
+      .delay-100 {
+        animation-delay: 0.1s;
+      }
+      .delay-200 {
+        animation-delay: 0.2s;
+      }
+      .delay-300 {
+        animation-delay: 0.3s;
+      }
+      .delay-400 {
+        animation-delay: 0.4s;
+      }
+      .delay-500 {
+        animation-delay: 0.5s;
+      }
+      .delay-600 {
+        animation-delay: 0.6s;
+      }
+    </style>
+  </head>
+  <body
+    class="h-screen w-screen bg-black overflow-y-scroll snap-y snap-mandatory"
+  >
+    <!-- Section 1:  Intro -->
+    <section
+      class="snap-section relative w-full bg-cover bg-center"
+      style="background-image: url('./images/backg.jpg')"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-start px-10"
+      >
+        <h1 class="text-5xl font-extrabold text-white mb-4">
+          Prajwal<br />Bawanthare
+        </h1>
+        <p class="text-lg text-gray-300 tracking-widest uppercase mb-8">
+          The 4<sup>th</sup> Year B.Tech Student
+        </p>
+        <a
+          href="RESUME.pdf"
+          class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300"
+          >Resume</a
+        >
+      </div>
+    </section>
+
+    <!-- Section 2: About ME -->
+<section
+  class="snap-section flex flex-col md:flex-row items-center justify-center bg-black text-white px-8 py-16"
+>
+  <div class="md:w-1/2 w-full mb-10 md:mb-0 flex justify-center items-center">
+    <img
+      src="./images/aboutme.jpg"
+      alt="About Me Image"
+      class="rounded-xl shadow-lg object-cover"
+      style="height: 50vh; width: auto; max-width: 100%;"
+    />
+  </div>
+  <div class="md:w-1/2 w-full px-4">
+    <h2 class="text-4xl font-bold mb-4">About Me</h2>
+    <p class="text-gray-300 mb-4">
+      Hi, I’m Prajwal — a dedicated Java Developer passionate about creating
+      efficient and scalable backend applications. I specialize in Java,
+      Spring Boot, and MySQL, and I’m currently working on building
+      real-time projects that solve real-world problems.
+    </p>
+    <p class="text-gray-300 mb-8">
+      I love writing clean, maintainable code and continuously learning new
+      tools and technologies to stay up-to-date. I’m currently looking for
+      internships or entry-level roles in software development where I can
+      grow and make a real impact. Outside of tech, I enjoy reading tech
+      blogs, exploring productivity tools, and learning about cloud and
+      DevOps.
+    </p>
+    <!-- <a
+      href="#"
+      class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-full transition duration-300"
+      >See More</a
+    > -->
+  </div>
+</section>
+
+
+    <!-- Section 3:Projects -->
+    <section class="snap-section bg-white py-16 px-6 md:px-20 text-center">
+      <div class="mb-12">
+        <h2 class="text-4xl font-bold text-gray-900">Projects</h2>
+        <!-- <p class="text-indigo-600 mt-2 font-medium">Elevate Education</p> -->
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <span class="text-6xl font-bold text-gray-200">01</span>
+          <img
+            src="./images/Code.png"
+            alt="Online WebCode Editor"
+            class="w-full h-60 object-cover rounded-lg my-4 shadow-md"
+          />
+          <h3 class="text-indigo-700 font-bold text-lg uppercase">
+            Online WebCode Editor
+          </h3>
+          <p class="text-gray-800 mt-2">
+             Description: A browser-based live frontend code Editor <br>Key Features: Real-time output preview.
+            <br> Tech Stack: HTML, CSS, JavaScript
+          </p>
+        </div>
+        <div>
+          <span class="text-6xl font-bold text-gray-200">02</span>
+          <img
+            src="./images/Image.png"
+            alt="Image Searcher"
+            class="w-full h-60 object-cover rounded-lg my-4 shadow-md"
+          />
+          <h3 class="text-indigo-700 font-bold text-lg uppercase">
+            Image Searcher
+          </h3>
+          <p class="text-gray-800 mt-2">
+            Description: A sleek and user-friendly image search application
+            powered by the Unsplash API.<br>
+            🚀 Key Features: Dynamic image fetching using Unsplash API.<br>
+            Tech Stack: HTML, CSS, JavaScript,
+            Unsplash API
+          </p>
+        </div>
+        <div>
+          <span class="text-6xl font-bold text-gray-200">03</span>
+          <img
+            src="./images/MyPortfolio.png"
+            alt="My Portfolio"
+            class="w-full h-60 object-cover rounded-lg my-4 shadow-md"
+          />
+          <h3 class="text-indigo-700 font-bold text-lg uppercase">
+            My Portfolio
+          </h3>
+          <p class="text-gray-800 mt-2">
+            A clean and professional personal portfolio showcasing my skills, projects, and passion for frontend development using HTML, CSS web technologies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Skills -->
+    <section class="snap-section bg-black py-20 text-center text-white">
+      <h2 class="text-4xl font-bold mb-12">Skills</h2>
+      <div class="flex flex-wrap justify-center gap-10 px-6">
+        <div
+          class="w-32 h-32 bg-gray-900 flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 hover:bg-indigo-700 transition duration-500 ease-in-out animate-fade-in-up delay-100"
+        >
+          <p class="font-bold text-xl">HTML</p>
+        </div>
+        <div
+          class="w-32 h-32 bg-gray-900 flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 hover:bg-indigo-700 transition duration-500 ease-in-out animate-fade-in-up delay-200"
+        >
+          <p class="font-bold text-xl">CSS</p>
+        </div>
+        <div
+          class="w-32 h-32 bg-gray-900 flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 hover:bg-indigo-700 transition duration-500 ease-in-out animate-fade-in-up delay-300"
+        >
+          <p class="font-bold text-xl">JavaScript</p>
+        </div>
+        <div
+          class="w-32 h-32 bg-gray-900 flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 hover:bg-indigo-700 transition duration-500 ease-in-out animate-fade-in-up delay-400"
+        >
+          <p class="font-bold text-xl">Java</p>
+        </div>
+        <!-- <div
+          class="w-32 h-32 bg-gray-900 flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 hover:bg-indigo-700 transition duration-500 ease-in-out animate-fade-in-up delay-500"
+        >
+          <p class="font-bold text-xl">Tailwind</p>
+        </div>
+        <div
+          class="w-32 h-32 bg-gray-900 flex items-center justify-center rounded-lg shadow-lg transform hover:scale-110 hover:bg-indigo-700 transition duration-500 ease-in-out animate-fade-in-up delay-600"
+        >
+          <p class="font-bold text-xl">React</p>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Section 5: Contact -->
+    <section class="snap-section flex flex-col md:flex-row w-full min-h-screen">
+      <div
+        class="md:w-1/2 w-full px-10 py-16 flex flex-col justify-center bg-white"
+      >
+        <h2 class="text-3xl font-bold text-black mb-8">Reach out</h2>
+        <div class="mb-6">
+          <p class="text-indigo-700 font-bold uppercase mb-1">Links</p>
+          <p class="text-gray-800">
+            <a href="https://github.com/prajwal2004-07">Github</a><br /><a
+              href="https://www.linkedin.com/in/prajwal-bawanthare-27a362259/"
+              >Linkedin</a
+            >
+          </p>
+        </div>
+        <div class="mb-6">
+          <p class="text-indigo-700 font-bold uppercase mb-1">Email Address</p>
+          <p class="text-gray-800"><a href="mailto:work.prajwalbawanthare@gmail.com">work.prajwalbawanthare@gmail.com</a></p>
+        </div>
+        <div class="mb-6">
+          <p class="text-indigo-700 font-bold uppercase mb-1">Phone Number</p>
+          <p class="text-gray-800"><a href="tel:+919529364425">+919529364425</a></p>
+        </div>
+      </div>
+      <div class="md:w-1/2 w-full relative">
+        <img
+          src="./images/ThankYou.jpg"
+          alt="Thank You Background"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 flex items-center justify-center">
+          <button
+            class="bg-indigo-700 hover:bg-indigo-800 text-white font-semibold px-12 py-4 rounded-full text-lg"
+          >
+            THANK YOU
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
